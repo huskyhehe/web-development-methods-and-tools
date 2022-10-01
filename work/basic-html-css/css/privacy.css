@@ -1,0 +1,15 @@
+p::first-letter {
+    font-size: 150%;
+    line-height: 1.6;
+    font-weight: bold;
+    color: #5a5096;
+}
+
+.home-back-button {
+    margin-top: 2rem;
+}
+
+.home-back-button a {
+    font-weight: bold;
+    color: #5a5096;
+}

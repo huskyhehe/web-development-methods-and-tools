@@ -1,0 +1,18 @@
+.category-list {
+    background-color: white;
+    border: .5rem #c8c4dc solid;    
+    padding: 2rem 4rem;
+    margin-top: 2rem;
+    line-height: 2;
+    list-style-type: "\1F430";  
+}
+
+.reference {
+    display: block;
+    padding: .5rem;
+    color: black;
+}
+
+.reference:hover {
+    background: #ecebf3;
+}   
