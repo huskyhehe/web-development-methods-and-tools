@@ -10,3 +10,9 @@ app.listen(3000, () => {
 app.get('/dynamic.html', (request, response) => {
     response.send('This is not an actual file');
 });
+
+const cats = {
+    
+}
+
+
