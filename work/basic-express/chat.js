@@ -19,7 +19,7 @@ function addMessage({ sender, text }) { // Leave this as `sender` - I want to se
   // Fill in!
   const newMessage = { sender, text };
   chat.messages.push(newMessage);
-}
+};
 
 const chat = {
   users,
@@ -28,3 +28,4 @@ const chat = {
 };
 
 module.exports = chat;
+

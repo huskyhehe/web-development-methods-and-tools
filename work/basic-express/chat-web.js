@@ -14,7 +14,6 @@ const chatWeb = {
             ${chatWeb.getMessageList(chat)}
             ${chatWeb.getOutgoing(chat)}
           </div>
-          <script src="message.js"></script>
         </body>
       </html>
   `;
@@ -58,13 +57,11 @@ const chatWeb = {
         <img class="avatar" alt="avatar of ${currentSender}" src="images/avatar-${currentSender}.jpg"/>
         <form action="/chat" method="post">
           <input class="sender" type="hidden" name="sender" value="${currentSender}"/>
-          <input 
-            class="message-to-send" type="text" name="text" placeholder="Enter message to send" required/>
-          <button class="send-button" type="submit" disabled>Send</button>
+          <input class="message-to-send" type="text" name="text" placeholder="Enter message to send" required/>
+          <button class="send-button" type="submit">Send</button>
         </form>
       </div>
     `;
-  },
+  }
 };
-
 module.exports = chatWeb;
