@@ -17,13 +17,9 @@ const messages = [
 // Below uses destrucuring
 function addMessage({ sender, text }) { // Leave this as `sender` - I want to see you solve the name disagreement
   // Fill in!
-<<<<<<< HEAD
   const newMessage = { sender, text };
   chat.messages.push(newMessage);
 };
-=======
-}
->>>>>>> 5d2926b2a08b21d37292d24fb02f345335597b43
 
 const chat = {
   users,
