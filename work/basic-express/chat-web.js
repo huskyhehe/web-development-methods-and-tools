@@ -6,10 +6,7 @@ const chatWeb = {
       <html>
         <head>
           <title>Chat</title>
-<<<<<<< HEAD
           <link rel="stylesheet" href="chat.css">
-=======
->>>>>>> 5d2926b2a08b21d37292d24fb02f345335597b43
         </head>
         <body>
           <div id="chat-app">
@@ -26,7 +23,6 @@ const chatWeb = {
     return `<ol class="messages">` +
       // Fill in
       // Generate the HTML for the list of messages
-<<<<<<< HEAD
       Object.values(chat.messages).map( message => `
         <li>
           <div class="message">
@@ -38,8 +34,6 @@ const chatWeb = {
           </div>
         <li>
       `).join('') +
-=======
->>>>>>> 5d2926b2a08b21d37292d24fb02f345335597b43
       `</ol>`;
   },
   getUserList: function(chat) {
@@ -47,17 +41,13 @@ const chatWeb = {
     Object.values(chat.users).map( user => `
       <li>
         <div class="user">
-<<<<<<< HEAD
           <img class="avatar" alt="avatar of ${user}" src="images/avatar-${user}.jpg"/>
-=======
->>>>>>> 5d2926b2a08b21d37292d24fb02f345335597b43
           <span class="username">${user}</span>
         </div>
       </li>
     `).join('') +
     `</ul>`;
   },
-<<<<<<< HEAD
   getOutgoing: function(chat) {
     // Fill in
     // Generate the HTML for a form to send a message
@@ -72,11 +62,6 @@ const chatWeb = {
         </form>
       </div>
     `;
-=======
-  getOutgoing: function() {
-    // Fill in
-    // Generate the HTML for a form to send a message
->>>>>>> 5d2926b2a08b21d37292d24fb02f345335597b43
   }
 };
 module.exports = chatWeb;
