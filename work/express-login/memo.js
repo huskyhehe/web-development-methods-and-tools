@@ -2,10 +2,10 @@ const users = {};
 const regex = /^[A-Za-z0-9]*$/;
 
 function validateUsername( username ) {
-    if ( username === "" ) {
+    if ( !username ) {
         return "Username must contain at least one letter or number.";
     };
-    if ( username == "dog" ) {
+    if ( username === "dog" ) {
         return "Username must not be dog.";
     }; 
     if ( !username.match(regex) ) {
