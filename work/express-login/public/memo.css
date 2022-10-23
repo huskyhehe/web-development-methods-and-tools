@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body { 
+    margin: 0;
+    font-family: sans-serif; 
+}
+
+body {
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    min-width: 20vw;
+    padding: .75rem;
+    border-radius: .5rem;
+    border: 1px solid gray;
+}
+
+button {
+    min-width: 20vw;
+    margin-top: 1rem;
+    padding: .75rem;
+    border: 0;
+    border-radius: .5rem;
+    color: white;
+    font-weight: bold;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+a {
+    text-align: end;
+}
+
+.memo-app {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 10rem auto auto;
+}
+
+.login-btn, .logout-btn {
+    background: #3fc380;
+}
+
+.logout-btn {
+    margin-top: 4rem;
+}
+
+.login-btn:hover, .logout-btn:hover {
+    background: #16a085;
+}
+
+.update-btn {
+    background: slateblue;
+}
+
+.update-btn:hover {
+    background: darkslateblue;
+}
+
+.username, .word {
+    font-weight: bold;
+    color: slateblue;
+}
