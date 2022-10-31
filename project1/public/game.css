@@ -1,0 +1,221 @@
+body {
+    font-family: sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+input {
+    padding: .75rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+    border: 1px solid gray;
+}
+
+button {
+    font-size: 1rem;
+    padding: .75rem;
+    border: 0;
+    border-radius: .5rem;
+    font-weight: bold;
+}
+
+
+.game-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.game-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.game-title {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0 1rem;
+    color: #c5facb;
+    background: slateblue;
+}
+
+.user-info {
+    margin: 0;
+}
+
+.error-content, 
+.warning-content, 
+.win-notice {
+    max-width: 12rem;
+    padding: 1rem;
+    border-radius: .25rem;
+}
+
+.error-content {
+    color: white;
+    background: #f96179;
+}
+
+.warning-content {
+    background: #f3d59b;
+}
+
+.win-notice {
+    background: #a6f8d2;
+}
+
+.username,
+.error-title, 
+.warning-title, 
+.secret-word, 
+.guess-word, 
+.match-count {
+    font-weight: bold;
+}
+
+.login-btn,
+.compare-btn {
+    margin-top: 1rem;
+    width: 14rem;
+}
+
+.restart-logout-content {
+    display: flex;
+}
+
+.restart-btn,
+.logout-btn {
+    width: 6.5rem;
+}
+
+.login-btn,
+.compare-btn {
+    color: white;
+    background: slateblue;
+}
+
+.restart-btn {
+    background: #9be1e6;
+}
+
+.logout-btn {
+    background: white;
+    color: slateblue;
+    outline: 2px solid rgba(105, 90, 205, 0.7);
+    outline-offset: -2px;
+    margin-left: 1rem;   
+}
+
+.login-btn:hover,
+.compare-btn:hover {
+    background: darkslateblue;
+}
+
+.restart-btn:hover {
+    background: #82c9ce;
+}
+
+.logout-btn:hover {
+    background: rgba(105, 90, 205, 0.2);
+}
+
+.words-list,
+.history-wrapper {
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+.words-list {
+    display: grid;
+    grid-template-columns: repeat(4, 3rem);
+    gap: .5rem;
+    max-width: fit-content;
+    text-align: center;
+    padding: 1rem;
+    background: #c5b6f15e;
+    border-radius: 1rem;
+}
+
+.history-wrapper {
+    margin-top: 0;
+    line-height: 1.5rem;
+}
+
+.username,
+.guess-word, 
+.match-count {
+    color: slateblue;
+}
+
+
+@media (min-width: 380px) {
+    form {
+        flex-direction: row;
+    }
+
+    .game-title {
+        font-size: 2.5rem;
+    }
+
+    .login-btn,
+    .compare-btn {
+        margin-left: 1rem;
+        margin-top: 0;
+        width: auto;
+    }
+
+    .resume-logout-content {
+        display: flex;
+        width: 20rem;
+        align-items: stretch;
+    }
+
+    .restart-btn {
+        width: max-content;
+    }
+
+    .logout-btn {
+        width: max-content;
+    }
+
+    .error-content, .warning-content, .win-notice {
+        max-width: 18rem;
+    }
+
+    .words-list {
+        grid-template-columns: repeat(6, 3rem);
+    }
+}
+
+@media (min-width: 550px) {
+    .words-list {
+        grid-template-columns: repeat(9, 3rem);
+    }
+}
+
+@media (min-width: 1280px) {  
+    .game-content {
+        flex-direction: row;
+    }
+
+    .guess-history {
+        margin-left: 5rem;
+        width: 24rem;
+    }
+}
