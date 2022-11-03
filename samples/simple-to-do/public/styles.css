@@ -1,0 +1,7 @@
+#app .todo { 
+  cursor: pointer;
+}
+
+#app .todo.complete {
+  text-decoration: line-through;
+}
