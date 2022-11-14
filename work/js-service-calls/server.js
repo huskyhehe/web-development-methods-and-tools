@@ -29,7 +29,7 @@ app.get('/api/session', (req, res) => {
 });
 
 // Create a new session (login)
-app.put('/api/session', (req, res) => {
+app.post('/api/session', (req, res) => {
   const { username } = req.body;
 
   if(!users.isValidUsername(username)) {

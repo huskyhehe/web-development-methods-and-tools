@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#memo-app {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem auto;
+    width: fit-content;
+    align-items: center;
+}
+
+.status {
+    font-weight: bold;
+    color: #f96179;
+}
+
+input,
+button {
+    font-size: 1rem;
+    padding: .5rem;
+}
+
