@@ -1,0 +1,236 @@
+html {
+    scroll-behavior: smooth;
+}
+
+html, body { 
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; 
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+}
+
+input, button {
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    background: #f96179;
+    color: white;
+    height: 10vh;
+    width: 100vw;   
+}
+
+.status p {
+    margin-left: 2rem;
+}
+
+.login__waiting {
+    margin-top: 25vh;
+    text-align: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+.content, .content__waiting {
+    display: flex;
+    width: 100vw;  
+    max-height: 100vh;
+}
+
+.content__waiting {
+    flex-direction: column;
+}
+
+.chat__waiting {
+    margin: 20vh auto;
+}
+
+.users__container {
+    background: darkslateblue;
+    color: white;
+    width: 30vw;
+}
+
+.users__container h3 {
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+.online__user {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.online__mark {
+    background: greenyellow;
+    height: .5rem;
+    min-width: .5rem;
+    border-radius: .25rem;  
+}
+
+.username {
+    word-break: break-word;
+    word-wrap: break-word; 
+    margin-left: .5rem; 
+}
+
+.messages__container, .messages__container__with__status {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+}
+
+.messages__container {
+    height: 100vh;
+}
+
+.messages__container__with__status {
+    height: 90vh;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 15px 25px -15px lightgray;
+    z-index: 0;
+}
+
+.controls p {
+    margin-left: auto;
+    color: gray;
+}
+
+.controls span {
+    color: slateblue;
+    font-weight: bold;
+}
+
+.controls__logout {
+    margin-left: 2rem;
+    height: fit-content;
+}
+
+.messages {
+    background: #f0f0f0;
+    overflow-y:scroll;
+    height: 100vh;
+}
+
+.user__message, .other__user__message {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.user__message {
+    align-items: flex-end;
+}
+
+.no__message {
+    margin-top: 20vh;
+    text-align: center;
+}
+
+.sender {
+    color: gray;
+    font-size: .8rem;
+    margin-bottom: .25rem;
+}
+
+.text {
+    margin-top: 0;
+    background: white;
+    width: fit-content;
+    max-width:80%;
+    padding: .5rem;
+    border-radius: .25rem;
+    word-wrap: break-word;
+}
+
+.user__message .text {
+    background-color: lightblue;
+}
+
+.send {   
+    background: whitesmoke;
+    border-top: 1px solid lightgray;
+    height: 15vh;
+    padding: 1rem;
+    position: sticky;
+    bottom: 0;
+}
+
+.send__form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.send__button {
+    margin-top: .5rem;
+    width: fit-content;
+    align-self: flex-end;
+}
+
+
+@media (min-width: 720px) {
+    ul {
+        padding: 1rem 3rem;
+    }
+
+    .status {
+        height: 5vh;
+    }
+
+    .users___container {
+        width: 20vw;
+    }
+
+    .users__container h3 {
+        margin-left: 2rem;
+    }
+    
+    .messages__container, .messages__container__with__status {
+        width: 80vw;
+    } 
+
+    .messages__container__with__status {
+        height: 95vh;
+    }
+    
+    .controls__logout {
+        margin-right: 2rem;
+    }
+
+    .send__form {
+        margin: 0 2rem;
+    }
+}
