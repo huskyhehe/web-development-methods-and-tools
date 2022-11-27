@@ -1,0 +1,38 @@
+.App {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 5rem;
+}
+
+input, button {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.logout-btn {
+    margin-left: 0;
+    margin-bottom: 1rem;
+}
+
+.login-status {
+    background: #f96179;
+    color: white;
+    padding: .5rem;
+}
+
+.game-rule {
+    margin: 1rem;
+    font-style: italic;
+    color: slateblue;
+}
+
+.game-result {
+    background: slateblue;
+    color: white;
+    padding: 1rem;
+    width: 40vw;
+    margin: 2rem auto;
+    border-radius: .5rem;
+}
