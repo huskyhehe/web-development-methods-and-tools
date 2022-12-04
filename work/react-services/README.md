@@ -33,7 +33,7 @@
 - Your application can be tested by running `npm install` and
   - running `npm start` to start the services server on port 4000
     - NOT the default create-react-behavior!
-  - running (in a separate terminal) `npm dev` to start the dev server on port 3000
+  - running (in a separate terminal) `npm run dev` to start the dev server on port 3000
     - Note: this requires change the `scripts` section of package.json
   - visiting http://localhost:3000 in the browser
 - Your application can ALSO work by:
