@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f0f2f5;
+}
+
+input, button {
+    font-size: 1rem;
+    padding: .5rem;
+    line-height: 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: slateblue;
+}
+
+.status {
+    background: #f96179;
+    color: white;
+    padding: .5rem;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 10vw;
+    margin: auto;
+    margin-top: 30vh;
+    justify-content: center;
+    background: linear-gradient(to left top, #9890e38e 0%, #b1f4cf94 100%);
+    padding: 5rem;
+    margin: 25vh auto;
+}
+
+.landing p {
+    font-size: 1.25rem;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;  
+    background: white;
+    padding: 2rem;
+    border: 1px solid lightgray;
+    border-radius: .5rem;
+}
+
+.login__button {
+    margin-top: 1rem;
+}
+
+.yammer {
+    display: flex;
+}
+
+.control__bar {
+    display: inline-block;
+    flex-direction: column;
+    width: 20vw;
+    padding: 2rem;
+    top: 0;
+    position: fixed;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    gap: 1rem;
+}
+
+.controls button {
+    font-size: .85rem;
+}
+
+.controls__refresh,
+.controls__back__to__feed {
+    margin-top: 2rem;
+    border: none;
+    border-radius: .5rem;
+    line-height: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.controls__refresh { 
+    background: rgba(105, 90, 205, 0.8);
+}
+
+.controls__refresh:hover {
+    background: darkslateblue;
+}
+
+.controls__back__to__feed {
+    background: yellowgreen;
+}
+
+.controls__back__to__feed:hover {
+    background: rgb(120, 166, 29)
+}
+
+.page__feed,
+.page__post__details,
+.page__user__profile {
+    background: white;
+    margin: 2rem auto;
+    width: 45vw;
+}
+
+.add__post__form,
+.post__item,
+.add__comment__form,
+.comment__item {
+    border-bottom: 1px solid gainsboro;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.post__item,
+.comment__item {
+    align-items: flex-start;
+}
+
+.submit__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: .5rem;
+}
+
+.length__indicator,
+.length__indicator__exceeded {
+    font-size: .75rem;
+}
+
+.length__indicator__exceeded {
+    color: red;
+}
+
+.submit__wrapper button {
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.post__item:hover {
+    background: rgb(247, 247, 251);
+}
+
+.post__text {
+    margin: .5rem 0;
+}
+
+.featured__label {
+    color: orange;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: -.5rem;
+    margin-bottom: -1rem;
+    padding: .2rem;
+    align-self: flex-end;
+    font-size: .8rem;
+}
+
+.post__item button,
+.comment__item button {
+    border: none;
+}
+
+.creator {
+    font-weight: bold;
+    padding: 0;
+}
+
+.creator:hover {
+    text-decoration: underline;
+    color: slateblue;
+}
+
+.add__button,
+.view__comment__button,
+.view__details__button,
+.delete__comment__button,
+.toggle__featured__button {
+    margin-right: 1rem;
+    font-size: .85rem;
+}
+
+.view__comment__button,
+.view__details__button,
+.delete__comment__button {
+    color: slateblue;
+    border-style: dashed;
+    border-left: 1px solid black;
+}
+
+.toggle__featured__button {
+    background: rgba(255, 166, 0, 0.5);
+}
+
+.view__comment__button:hover,
+.view__details__button:hover,
+.delete__comment__button:hover {
+    background: rgba(105, 90, 205, 0.3);
+}
+
+.toggle__featured__button:hover {
+    background: orange;
+}
+
+.intro {
+    margin-top: 3rem;
+    font-size: .9rem;
+    padding: 1rem;
+    background: gainsboro;
+}
+
+.intro h4 {
+    margin: 0;
+}
+
+.loading {
+    margin: auto;
+}
+
+.user__card {
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(to right bottom, #9890e38e 0%, #b1f4cf94 100%);
+}
+
+.user__card p {
+    margin-top: 0;
+}
+
+.post__detail__wrapper {
+    border-bottom: 1px solid gainsboro;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.post__detail__card h3 {
+    text-align: center;
+    padding: .5rem;
+    margin: 0;
+    background: gainsboro;
+}
+
+.card__creator {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.posts__waiting {
+    text-align: center;
+    padding: 1rem;
+    min-height: 100vh;
+}
+
+.empty {
+    text-align: center;
+    padding: 1rem;
+}
